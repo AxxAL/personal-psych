@@ -1,10 +1,15 @@
 <script setup lang="ts">
+const audio = new Audio("audio/requiem.mp3");
+audio.volume = 0.02;
+audio.loop = true;
+
+const play = () => audio.paused ? audio.play() : null;
 
 </script>
 
 <template>
   <main class="container">
-    <p class="font-psych rainbow-trail" style="color: transparent; font-size: 90px;">Magickal Execution</p>
+    <p v-on:click="play" class="font-psych rainbow-trail" style="color: transparent; font-size: 10vw;">Magickal Execution</p>
   </main>
 </template>
 
