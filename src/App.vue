@@ -10,7 +10,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <main class="wrapper">
+  <main >
     <RouterView />
   </main>
 </template>
